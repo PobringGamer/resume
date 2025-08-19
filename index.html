@@ -110,5 +110,22 @@
   <footer class="footer">
     <p>© 2025 Joseph Gulleban Borja | Resume Website</p>
   </footer>
+  <script>
+  function openModal(id) {
+    document.getElementById(id).style.display = "block";
+  }
+  function closeModal(id) {
+    document.getElementById(id).style.display = "none";
+  }
+  // Close modal when clicking outside the box
+  window.onclick = function(event) {
+    document.querySelectorAll(".modal").forEach(modal => {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    });
+  }
+</script>
+
 </body>
 </html>
