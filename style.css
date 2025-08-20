@@ -66,7 +66,7 @@ nav a:hover {
   background: #1d3557;
 }
 */ 
-.skill-btn {
+.skills li button.skill-btn {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   font-weight: bold;
@@ -78,13 +78,16 @@ nav a:hover {
   color: #fff;
   cursor: pointer;
   transition: background 0.3s ease;
-  width: 260px;   /* fixed width to keep all same size */
+  width: 260px;   /* 🔹 force equal width */
+  display: inline-block;
   text-align: center;
+  white-space: normal; /* allow wrapping of long text like VoIP */
 }
 
-.skill-btn:hover {
+.skills li button.skill-btn:hover {
   background: #0096c7;
 }
+
 
 /* Modal */
 .modal {
