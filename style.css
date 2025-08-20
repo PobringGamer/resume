@@ -53,7 +53,7 @@ nav a:hover {
 
 
 /* Skill button */
-/* .skill-btn {
+ .skill-btn {
   background: #457b9d;
   color: #fff;
   border: none;
@@ -65,27 +65,6 @@ nav a:hover {
 .skill-btn:hover {
   background: #1d3557;
 }
-*/ 
-.skills li button.skill-btn {
-  font-weight: bold;
-  padding: 12px 20px;
-  margin: 6px;
-  border: none;
-  border-radius: 6px;
-  background: #0077b6;
-  color: #fff;
-  cursor: pointer;
-  transition: background 0.3s ease;
-  width: 5px;   /* 🔹 force equal width */
-  display: inline-block;
-  text-align: center;
-  white-space: normal; /* allow wrapping of long text like VoIP */
-}
-
-.skills li button.skill-btn:hover {
-  background: #0096c7;
-}
-
 
 /* Modal */
 .modal {
