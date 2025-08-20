@@ -3,511 +3,163 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Joseph Gulleban Borja - Resume</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Librando | Systems Administrator</title>
+  <style>
+    /* Global Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; color: #333; }
+
+    /* Parallax Section */
+    .hero {
+      background: url('photo.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      background-attachment: fixed; /* parallax effect */
+    }
+    .hero h1 { font-size: 3rem; }
+    .hero h2 { font-size: 1.5rem; font-weight: 300; }
+
+    /* Section Styles */
+    section {
+      padding: 80px 10%;
+    }
+    h2.section-title {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2rem;
+      color: #444;
+    }
+
+    /* Experience Cards */
+    .experience {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .card:hover { transform: translateY(-5px); }
+    .card h3 { color: #222; margin-bottom: 10px; }
+    .card ul { margin-left: 20px; list-style: disc; }
+
+    /* Skills Section */
+    .skills ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+    .skills li {
+      background: #f4f4f4;
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #111;
+      color: white;
+    }
+  </style>
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <img src="photo.jpg" alt="Joseph Borja" class="profile-photo">
-      <h1>Joseph Gulleban Borja</h1>
-      <p class="subtitle">Systems Administrator | Network Administrator</p>
-      <p class="contact">
-        RM 106, Casablanca Suite, Bigfoot Studios, Mactan, Lapu Lapu City, Cebu, 6015, Philippines<br>
-        📧 <a href="mailto:j_borja@yahoo.com">j_borja@yahoo.com</a> | 📱 +63 928 299 4770 
+  <!-- Hero / Parallax -->
+  <section class="hero">
+    <div>
+      <h1>Librando</h1>
+      <h2>Systems Administrator | IT Infrastructure Specialist</h2>
     </div>
-  </header>
+  </section>
 
-  <main class="container">
-    <!-- Professional Summary -->
-    <section>
-      <h2>Professional Summary</h2>
-      <p>
-        Accomplished Systems Administrator with 25 years of experience overseeing server and data center operations across Linux, macOS, and Windows platforms. Experienced Network Engineer with expertise in LAN/WAN design, Cisco routing and switching, VoIP, and VLAN management. Proven track record of planning, implementing, and optimizing IT infrastructures to ensure high availability, security, and performance. Strong ability to align technology solutions with business objectives, driving growth and operational efficiency. Adept at troubleshooting complex issues, leading projects, and managing cross-functional teams within diverse IT environments.      
-      </p>
-    </section>
+  <!-- About Section -->
+  <section>
+    <h2 class="section-title">About Me</h2>
+    <p>
+      Experienced Systems Administrator with 20+ years managing Linux, Windows, and Cisco-based infrastructure. 
+      Proven expertise in network optimization, server deployment, and IT operations for enterprises across diverse industries.
+    </p>
+  </section>
 
-    <!-- Core Competencies -->
-    <section>
-  <h2>Core Competencies & Technical Expertise</h2>
-  <ul class="skills">
-    <li>
-      <button class="skill-btn" onclick="openModal('modal1')">
-        Systems & Server Administration
-      </button>
-    </li>
-    <li>
-      <button class="skill-btn" onclick="openModal('modal2')">
-        Email & Collaboration Platforms
-      </button>
-    </li>
-    <li>
-      <button class="skill-btn" onclick="openModal('modal3')">
-        Directory & Network Services
-      </button>
-    </li>
-    <li>
-      <button class="skill-btn" onclick="openModal('modal4')">
-        Networking & Security
-      </button>
-    </li>
-    <li>
-      <button class="skill-btn" onclick="openModal('modal5')">
-        Storage & Virtualization
-      </button></li>
-    <li>
-      <button class="skill-btn" onclick="openModal('modal6')">
-        VoIP & Unified Communications
-      </button>
-    </li>
-    <li>
-      <button class="skill-btn" onclick="openModal('modal7')">
-        Monitoring & Performance Management
-      </button>
-    </li>
-    <li>
-      <button class="skill-btn" onclick="openModal('modal8')">
-        Web & Application Platforms      
-      </button>
-    </li>
-    <li>
-       <button class="skill-btn" onclick="openModal('modal9')">
-        Leadership & Collaboration
-      </button></li>
-  </ul>
-</section>
-<!-- Modal for Systems & Server Administration -->
-<div id="modal1" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('modal1')">&times;</span>
-    <h3>Systems & Server Administration</h3>
-    <p>
-      Extensive experience in installation, configuration, and administration 
-      across diverse environments. Proficient in Microsoft Windows Servers 
-      (NT4–2012 R2, Windows 7–10), macOS Servers (Tiger through Yosemite), 
-      and multiple Linux/UNIX distributions (RedHat, Slackware, Debian, CentOS, 
-      Fedora, FreeBSD, Mandriva).
-    </p>
-  </div>
-</div>
-<!-- Modal for Email & Collaboration Platforms -->
-<div id="modal2" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('modal2')">&times;</span>
-    <h3>Email & Collaboration Platforms</h3>
-    <p>
-      Skilled in managing enterprise email systems including Microsoft Exchange, Sendmail, Gmail Cloud, and Office 365.
-    </p>
-  </div>
-</div>
-<!-- Modal for Directory & Network Services -->
-<div id="modal3" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('modal3')">&times;</span>
-    <h3>Directory & Network Services</h3>
-    <p>
-      Strong expertise in Active Directory, Group Policy Management, DHCP, DNS, and related infrastructure services.
-    </p>
-  </div>
-</div>
-<!-- Modal for Networking & Security-->
-<div id="modal4" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('modal4')">&times;</span>
-    <h3>Networking & Security</h3>
-    <p>
-      In-depth knowledge of Cisco routing and switching platforms (800–4500 series), VLANs, WAN/LAN design, VoIP, VPNs, and firewall technologies (Cisco ASA, Barracuda, Smoothwall, Check Point, iptables, fail2ban, ufw).
-    </p>
-  </div>
-</div>
-<!-- Modal for Storage & Virtualization-->
-<div id="modal5" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('modal5')">&times;</span>
-    <h3>Storage & Virtualization</h3>
-    <p>
-    Experienced in SAN, NAS, DAS, RAID (Xsan, FreeNAS, Synology, Promise, Drobo), QLogic Fiber Switches, LUN management, and storage protocols (AFP, SMB, NFS).    
-    </p>
-  </div>
-</div>
-<!-- Modal for VoIP & Unified Communications-->
-<div id="modal6" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('modal6')">&times;</span>
-    <h3>VoIP & Unified Communications</h3>
-    <p>
-    Skilled in Cisco Unity, Cisco Call Manager, VoIP Studios, Avaya Systems, WebEx, Vonage and SIP server implementations.    
-    </p>
-  </div>
-</div>
-<!-- Modal for Monitoring & Performance Management-->
-<div id="modal7" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('modal7')">&times;</span>
-    <h3>Monitoring & Performance Management</h3>
-    <p>
-    Proficient with MRTG, SNMP, Nagios, Capsa, Hetrixtools and Sitescope for network and system health monitoring.    </p>
-  </div>
-</div>
-<!-- Modal for Web & Application Platforms-->
-<div id="modal8" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('modal8')">&times;</span>
-    <h3>Web & Application Platforms</h3>
-    <p>
-    Administration of Apache and IIS; capable in PHP, MySQL, JavaScript, C, Python, HTML, CSS, Nginx, Node.js and VB6.   </p>
-  </div>
-</div>
-<!-- Modal for Leadership & Collaborations-->
-<div id="modal9" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('modal9')">&times;</span>
-    <h3>Leadership & Collaborations</h3>
-    <p>
-    Proven record as a project leader and technical team manager, with extensive documentation and training experience to support knowledge transfer and operational excellence. </p>
-  </div>
-</div>
-    <!-- Experience -->
-    <section>
-      <h2>Professional Experience</h2>
-      <div class="job">
-        <h3>System Administrator – Bigfoot Studios Inc. | Cebu City (2020 – Present)</h3>
+  <!-- Skills -->
+  <section class="skills">
+    <h2 class="section-title">Core Skills</h2>
+    <ul>
+      <li>Linux/Unix Administration</li>
+      <li>Windows Server</li>
+      <li>Networking (Cisco, VLANs, VPNs)</li>
+      <li>Firewall & Security</li>
+      <li>Virtualization (VMware, Hyper-V, Proxmox)</li>
+      <li>MySQL & Database Administration</li>
+      <li>Web & Proxy Servers</li>
+      <li>IT Infrastructure Monitoring</li>
+    </ul>
+  </section>
+
+  <!-- Experience -->
+  <section>
+    <h2 class="section-title">Professional Experience</h2>
+    <div class="experience">
+      <div class="card">
+        <h3>Bigfoot Studios Inc. (2007 – 2013)</h3>
+        <p><em>System Administrator</em></p>
         <ul>
-  <h3>Server & Infrastructure Management</h3>
-<ul>
-  <li>Monitored and maintained production servers to ensure high availability, security, and performance.</li>
-  <li>Migrated non-essential applications from bare-metal servers to AWS, enhancing scalability and reducing hardware dependencies.</li>
-  <li>Optimized server performance through automation, custom scripting, and proactive configuration tuning.</li>
-</ul>
-
-<h3>Cloud & AWS Administration</h3>
-<ul>
-  <li>Deployed, configured, and managed AWS services including EC2, RDS, and Route 53.</li>
-  <li>Reduced operational costs by auditing and decommissioning unused cloud assets.</li>
-  <li>Improved SSL management by replacing non-commercial certificates with Let’s Encrypt, reducing licensing costs.</li>
-</ul>
-
-<h3>Backup, Security & Disaster Recovery</h3>
-<ul>
-  <li>Implemented offline backups of MySQL databases and EC2 snapshots with scheduled test restores.</li>
-  <li>Hardened servers against malware, exploits, and vulnerabilities through proactive security hardening.</li>
-  <li>Led DDoS mitigation and recovery efforts, ensuring continuity of services during attacks.</li>
-</ul>
-
-<h3>Monitoring & Compliance</h3>
-<ul>
-  <li>Monitored and managed SSL certificates to ensure renewal and compliance.</li>
-  <li>Used Pingdom and other monitoring tools to maintain uptime and detect performance issues.</li>
-  <li>Conducted IT workflow audits, recommending and implementing efficiency improvements.</li>
-</ul>
-
-<h3>Collaboration & Support</h3>
-<ul>
-  <li>Partnered with developers to provision infrastructure and allocate resources for ongoing projects.</li>
-  <li>Delivered Tier-2/3 support for users and IT staff, ensuring business continuity.</li>
-  <li>Produced comprehensive documentation and facilitated knowledge transfer to the IT team.</li>
-  <li>Conducted on-site datacenter visits (local and overseas) to support infrastructure rollouts.</li>
-</ul>
-
-<h3>Key Achievements</h3>
-<ul>
-  <li>Reduced AWS hosting costs by eliminating unused assets and using free SSL solutions.</li>
-  <li>Improved disaster recovery readiness by automating backup verification and system monitoring.</li>
-  <li>Strengthened IT security posture through proactive DDoS defense and SSL lifecycle management.</li>
-</ul>
-
+          <li>Managed Linux/Unix servers (DHCP, DNS, Apache, MySQL, Proxy, NTP).</li>
+          <li>Administered Cisco networking equipment, firewalls, and Exinda WAN optimization.</li>
+          <li>Deployed and managed WiFi with FreeRadius on Linux servers.</li>
+          <li>Maintained monitoring tools (MRTG, SiteScope).</li>
         </ul>
       </div>
-      <div class="job">
-        <h3>Network Administrator – Jazeera Airways | Kuwait (2015 – 2019)</h3>
+
+      <div class="card">
+        <h3>Bal Tours Cebu – Germany Corp. (2006 – 2007)</h3>
+        <p><em>IT Supervisor</em></p>
         <ul>
-          <h3>Systems & Server Administration</h3>
-<ul>
-  <li>Administered <b>Active Directory</b> and <b>Group Policy</b> in a 2,000+ user environment.</li>
-  <li>Installed, configured, and administered <b>Windows Server (2003, 2008 R2, 2012)</b>, <b>Linux</b>, and <b>macOS servers</b>.</li>
-  <li>Managed <b>Exchange Server 2010</b> with HA redundancy and multiple mailbox databases.</li>
-  <li>Configured and administered core IT services: <b>DHCP, DNS, File Sharing, FTP, SMB, VPN</b>.</li>
-  <li>Provided support and disaster recovery services for <b>MSSQL failover clusters</b> and <b>IIS 7 web servers</b>.</li>
-</ul>
-
-<h3>Virtualization & Cloud</h3>
-<ul>
-  <li>Administered <b>VMware vSphere 5.x</b> (30+ servers, multiple clusters) and <b>Hyper-V</b> environments.</li>
-  <li>Managed <b>VxRail Systems</b> and collaborated with virtualization engineers to support VM infrastructure.</li>
-  <li>Configured <b>SAN/Storage systems</b> (EMC VNX, VNX5100) and troubleshot host-related storage issues.</li>
-  <li>Implemented <b>Veeam, Comodo, and Symantec backup solutions</b> with scheduled restores and HP autoloaders.</li>
-  <li>Supported <b>Office 365</b> and <b>Google Workspace</b> for enterprise clients.</li>
-</ul>
-
-<h3>Networking & Security</h3>
-<ul>
-  <li>Maintained LAN/Wi-Fi availability using <b>Microsoft Active Directory, FreeRADIUS, and Capsa Enterprise</b> monitoring.</li>
-  <li>Configured and maintained <b>Cisco routers, switches, and ASA firewalls</b>, as well as <b>Fortigate and Smoothwall</b> appliances.</li>
-  <li>Managed <b>Palo Alto firewalls</b> in high-availability mode.</li>
-  <li>Configured and monitored <b>VPN access</b> for secure remote connectivity.</li>
-  <li>Implemented <b>MRTG and SiteScope</b> monitoring systems for performance and availability.</li>
-</ul>
-
-<h3>Collaboration & Communication Systems</h3>
-<ul>
-  <li>Administered <b>Avaya telephone systems</b> and <b>Citrix XenApp environments</b> for enterprise use.</li>
-  <li>Ensured continuous uptime and optimized usage of communication and virtualization platforms.</li>
-</ul>
-
+          <li>Managed Windows 2000 servers and VPN infrastructure.</li>
+          <li>Developed and maintained corporate websites.</li>
+          <li>Implemented MySQL database replication.</li>
         </ul>
       </div>
-      <!-- You can continue adding other jobs like Al Watan TV, etc. -->
-<div class="job">
-        <h3>Computer Engineer – Al Watan TV | Kuwait (2013 – 2015)</h3>
-  <ul>    
-  <h3>Server & Systems Administration</h3>
-<ul>
-  <li>Installed and configured diverse server operating systems, including Apple macOS, Linux distributions, and Microsoft Windows Servers for enterprise networks.</li>
-  <li>Administered macOS-based infrastructure delivering core services such as DHCP, DNS, FTP, and AFP.</li>
-  <li>Deployed and maintained Apache Web Servers to support local web applications and services.</li>
-</ul>
 
-<h3>Network & Security Management</h3>
-<ul>
-  <li>Administered and secured enterprise networks through advanced firewall configuration and management.</li>
-  <li>Configured, maintained, and optimized Cisco networking devices including routers and switches.</li>
-  <li>Managed enterprise WiFi authentication using FreeRadius on Linux servers.</li>
-  <li>Developed and deployed a custom FTP service application, enhancing global support team efficiency.</li>
-</ul>
+      <!-- You can keep adding other jobs here in same card format -->
+    </div>
+  </section>
 
-<h3>Telephony & Communication Systems</h3>
-<ul>
-  <li>Administered Cisco Call Manager, ensuring reliable corporate telephony services.</li>
-  <li>Provided Tier-1 support for WASP and Norcom communication platforms.</li>
-</ul>
+  <!-- Other Projects -->
+  <section>
+    <h2 class="section-title">Other Professional Experience</h2>
+    <div class="experience">
+      <div class="card">
+        <h3>Freelance Structured Cabling Projects</h3>
+        <ul>
+          <li><b>Divine Word College:</b> Designed and implemented network cabling infrastructure for Internet and EDP systems.</li>
+          <li><b>Cyberscript Internet & Document:</b> Configured Internet servers and structured cabling solutions.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Freelance Web Design</h3>
+        <ul>
+          <li><b>Cebu Trip Rent A Car:</b> Designed and developed official website (<a href="http://www.cebutrip.net" target="_blank">cebutrip.net</a>).</li>
+          <li><b>Bal Tours Travel Agency:</b> Built and launched website (<a href="http://www.bal-tours.ph" target="_blank">bal-tours.ph</a>).</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-<h3>Storage & SAN Management</h3>
-<ul>
-  <li>Maintained and supported enterprise-class storage solutions, including Promise RAID and Xserve RAID subsystems.</li>
-  <li>Configured, administered, and optimized SAN-based file systems and related components such as Apple Xsan, QLogic SANbox switches, HBA cards, LUNs, and storage pools.</li>
-  <li>Supported video editors and graphics teams by managing Xsan systems for high-performance media workflows.</li>
-</ul>
-
-<h3>Monitoring & Performance Management</h3>
-<ul>
-  <li>Monitored and analyzed network traffic using Capsa Enterprise to ensure security and efficiency.</li>
-  <li>Implemented and maintained performance monitoring tools including MRTG and Sitescope.</li>
-</ul>
-
-<h3>Broadcast & Media Systems</h3>
-<ul>
-  <li>Provided technical support for broadcast automation systems powering live TV news programs and variety shows.</li>
-</ul>
-  </ul>
-</div>
-<div class="job">
-  <h3>System Administrator – Bigfoot Studios Inc. | Cebu City (July 2007 – March 2013)</h3>
-   <ul>
-  <h3>Server & Network Administration</h3>
-  <ul>
-    <li>Evaluated, approved, and implemented configuration changes to optimize systems performance.</li>
-    <li>Installed, configured, and administered routers, switches, and firewalls to support LAN, VLAN, WLAN, and multi-WAN environments.</li>
-    <li>Deployed and managed Linux/Unix systems providing core services such as DHCP, DNS, NTP, and Squid proxy servers.</li>
-    <li>Installed and configured Apple Mac OS X and Linux server platforms for production use.</li>
-    <li>Administered proxy servers and firewalls, including Exinda appliances for WAN optimization.</li>
-  </ul>
-
-  <h3>Infrastructure & Systems Management</h3>
-  <ul>
-    <li>Administered Mac-based systems providing DHCP, DNS, FTP, and AFP services.</li>
-    <li>Maintained Cisco networking equipment to ensure optimal connectivity.</li>
-    <li>Managed Peplink Load Balancer for gateway redundancy and performance.</li>
-    <li>Deployed and managed Exinda WAN optimization appliances for bandwidth monitoring.</li>
-    <li>Maintained wireless access with FreeRadius authentication on Linux servers.</li>
-  </ul>
-
-  <h3>Monitoring & Support</h3>
-  <ul>
-    <li>Maintained MRTG and Sitescope monitoring systems for proactive performance tracking.</li>
-    <li>Developed and deployed custom FTP service applications to support global customer operations.</li>
-    <li>Installed and configured Apache Web Server for corporate websites.</li>
-    <li>Performed MySQL database administration, including backup and optimization.</li>
-  </ul>
-   </ul>
-</div>
-
-
-<div class="job">
-  <h3>IT Supervisor – Bal Tours Cebu – Germany Corporation | Cebu City (June 2006 – June 2007)</h3>
-   <ul>
-  <h3>IT Infrastructure & Web Development</h3>
-  <ul>
-    <li>Maintained company network and internet infrastructure on Windows 2000 Server.</li>
-    <li>Developed HTML templates and CSS stylesheets to modernize web presence.</li>
-    <li>Revamped corporate website to improve usability and branding.</li>
-    <li>Implemented MySQL database replication to improve reliability.</li>
-    <li>Established secure VPN connections using AVM server.</li>
-  </ul>
-
-  <h3>Systems & Support</h3>
-  <ul>
-    <li>Administered desktops, laptops, and printers across the organization.</li>
-    <li>Provided 24x7 on-call support for production servers and critical systems.</li>
-  </ul>
-   </ul>
-</div>
-
-
-<div class="job">
-  <h3>Assistant System & Network Administrator – Ictus Communication Inc. | Cebu City (Jan 2001 – June 2006)</h3>
-<ul>
-  <h3>Systems & Server Management</h3>
-  <ul>
-    <li>Maintained network and internet infrastructure on Cisco platforms.</li>
-    <li>Installed and supported SIP servers for temporary VoIP services.</li>
-    <li>Configured and administered Windows NT, Linux, and Solaris servers.</li>
-    <li>Deployed and managed web-based email and FTP services on Linux systems.</li>
-    <li>Maintained and backed up MySQL databases.</li>
-  </ul>
-
-  <h3>Access & Security</h3>
-  <ul>
-    <li>Configured dial-up internet access servers with RADIUS authentication.</li>
-    <li>Implemented user authentication and accounting for prepaid internet access cards.</li>
-  </ul>
-
-  <h3>IT Support</h3>
-  <ul>
-    <li>Provided desktop, laptop, and printer maintenance.</li>
-    <li>Configured VoIP clients and delivered technical support to end users.</li>
-  </ul>
-</ul>
-</div>
-
-
-<div class="job">
-  <h3>Network Operations Staff – Philweb.Com Inc. | Cebu City / Tacloban City (Jan 2000 – Jan 2001)</h3>
-<ul>
-  <h3>Networking & Infrastructure</h3>
-  <ul>
-    <li>Maintained Cisco-based network and internet infrastructure.</li>
-    <li>Deployed and configured satellite internet receivers for corporate connectivity.</li>
-    <li>Managed dial-up infrastructure using Windows Server and NT-based modem pools.</li>
-  </ul>
-
-  <h3>Server Administration</h3>
-  <ul>
-    <li>Administered data centers running Windows Server (AD, DHCP, DNS), Linux servers, and over 100 desktop systems.</li>
-    <li>Configured and managed web servers and FTP services on Linux systems.</li>
-    <li>Delivered 24x7 on-call support for production servers.</li>
-  </ul>
-</ul>
-</div>
-
-
-<div class="job">
-  <h3>Technical Support & Network Operations – Sky Internet Inc. | Cebu City (Jan 1999 – Jan 2000)</h3>
-<ul>
-  <h3>Systems & Infrastructure</h3>
-  <ul>
-    <li>Maintained Windows and Linux servers for corporate and dial-up services.</li>
-    <li>Configured and supported dial-up internet access accounts and authentication systems.</li>
-    <li>Maintained networking infrastructure and provided 24x7 on-call client support.</li>
-  </ul>
-</ul>
-</div>
-
-
-<div class="job">
-  <h3>Network & System Operations Head – Cyberscape Internet Inc. | Cebu City (Nov 1998 – Nov 1999)</h3>
-<ul>
-  <h3>Systems & Web Services</h3>
-  <ul>
-    <li>Maintained company’s Windows NT and Linux server infrastructure.</li>
-    <li>Developed HTML templates and CSS stylesheets for internal and client use.</li>
-    <li>Configured and administered Linux-based email and FTP services.</li>
-    <li>Delivered 24x7 production server support.</li>
-  </ul>
-</ul>
-</div>
-
-
-<div class="job">
-  <h3>Network Operations Staff & Customer Support Engineer – Bohol Online Systems Inc. | Tagbilaran City (June 1996 – Oct 1998)</h3>
-<ul>
-  <h3>Systems & Infrastructure</h3>
-  <ul>
-    <li>Maintained Linux dial-up servers (DHCP, DNS, Gateway) supporting 200+ users.</li>
-    <li>Deployed and managed Linux-based email, FTP, and MySQL servers.</li>
-    <li>Provided routing, WAN/LAN, and switching support.</li>
-  </ul>
-
-  <h3>System Design & Deployment</h3>
-  <ul>
-    <li>Implemented imaging procedures to streamline end-user computer deployments.</li>
-    <li>Deployed OpenFiler-based SAN/NAS (iSCSI/NFS) storage solutions.</li>
-    <li>Maintained MRTG monitoring systems for proactive infrastructure oversight.</li>
-    <li>Provided 24x7 operational support for mission-critical systems.</li>
-  </ul>
-</ul>
-</div>
-
-    </section>
-<section>
-  <div class="job">
-  <h3><i>Other Professional Experience</i></h3>
-  <ul> 
-  <h3>Freelance Structured Cabling Projects</h3>
-  <ul>
-    <li><strong>Divine Word College</strong> – Designed and implemented network cabling infrastructure for the Internet and EDP section of the school, ensuring reliable connectivity and performance.</li>
-    <li><strong>Cyberscript Internet and Document Services</strong> – Configured Internet servers and deployed structured cabling solutions to support business operations and scalability.</li>
-  </ul>
-
-  <h3>Freelance Web Design & Development</h3>
-  <ul>
-    <li><strong>Cebu Trip Rent A Car</strong> – Designed and developed the official website (<a href="http://www.cebutrip.net" target="_blank">www.cebutrip.net</a>), improving online presence and customer accessibility.</li>
-    <li><strong>Bal Tours Travel Agency</strong> – Built and launched the company website (<a href="http://www.bal-tours.ph" target="_blank">www.bal-tours.ph</a>), enabling online inquiries and enhancing brand visibility.</li>
-  </ul>
-  </ul>
-</div>
-
-</section>
-    <!-- Education -->
-    <section>
-      <h2>Education</h2>
-      <p><strong>B.S. Information and Computer Science (1998)</strong> – Bohol Institute of Technology, Tagbilaran City, Bohol, Philippines</p>
-    </section>
-
-    <!-- References -->
-    <section>
-      <h2>Character References</h2>
-      <ul>
-        <li>Engr. Jun Penkian – GM, Bohol Online Systems Inc.</li>
-        <li>Engr. Virgelio Dureza – Regional Manager, Sky Internet Visayas</li>
-        <li>Mr. Glenn Labos – CEO, Cyberscape Internet</li>
-        <li>Engr. Jesus Sombilon – NOMC Manager, Philweb.Com</li>
-        <li>Engr. Wesley Jay Deypalan – Network Admin, Ictus Communication</li>
-        <li>Engr. Hussain Hussain – CIO, AL Watan TV Networks</li>
-        <li>Engr. Praful Thumar - VP-IT, Jazeera Airways</li>
-        <li>Engr. Bryan Angelo Librando – IT Manager, Bigfoot Studios</li>
-      </ul>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <p>© 2025 Joseph Gulleban Borja | Resume Website</p>
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Librando | Systems Administrator Resume</p>
   </footer>
-  <script>
-  function openModal(id) {
-    document.getElementById(id).style.display = "block";
-  }
-  function closeModal(id) {
-    document.getElementById(id).style.display = "none";
-  }
-  // Close modal when clicking outside the box
-  window.onclick = function(event) {
-    document.querySelectorAll(".modal").forEach(modal => {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    });
-  }
-</script>
-
 </body>
 </html>
