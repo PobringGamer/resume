@@ -78,7 +78,7 @@ nav a:hover {
   color: #fff;
   cursor: pointer;
   transition: background 0.3s ease;
-  width: 260px;   /* 🔹 force equal width */
+  width: 200px;   /* 🔹 force equal width */
   display: inline-block;
   text-align: center;
   white-space: normal; /* allow wrapping of long text like VoIP */
