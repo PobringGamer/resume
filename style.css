@@ -11,36 +11,40 @@ body {
   display: none;
   position: fixed;
   z-index: 2000;
-  left: 0; top: 0;
+  top: 0; left: 0;
   width: 100%; height: 100%;
   background: rgba(0,0,0,0.8);
 
-  /* Flexbox centers the image */
+  /* Flexbox to center content */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .modal-content {
-  max-width: 90%;     /* prevents image from overflowing screen width */
-  max-height: 90vh;   /* prevents image from going beyond viewport height */
+  max-width: 90%;      /* scale down horizontally */
+  max-height: 90vh;    /* scale down vertically */
+  width: auto;
+  height: auto;
   border-radius: 10px;
   box-shadow: 0 0 25px rgba(0,0,0,0.5);
+  object-fit: contain; /* ensures proper scaling */
 }
-
 
 .close {
   position: absolute;
   top: 20px;
-  right: 35px;
+  right: 30px;
   color: #fff;
   font-size: 40px;
   font-weight: bold;
   cursor: pointer;
+  z-index: 2100;
 }
 .close:hover {
   color: #ff4444;
 }
+
 
 /* Header */
 .header {
