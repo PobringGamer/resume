@@ -583,27 +583,30 @@ nav a:hover {
   }
 </script>
 <script>
-  const profilePhoto = document.getElementById("profilePhoto");
-  const modal = document.getElementById("photoModal");
-  const fullPhoto = document.getElementById("fullPhoto");
-  const closeBtn = document.querySelector(".close");
+const profilePhoto = document.getElementById("profilePhoto");
+const modal = document.getElementById("photoModal");
+const fullPhoto = document.getElementById("fullPhoto");
+const closeBtn = modal.querySelector(".close");
 
-  profilePhoto.onclick = function() {
-    modal.style.display = "block";
-    fullPhoto.src = this.src; // same image, but full size
-  }
+// When user clicks profile photo
+profilePhoto.onclick = function() {
+  fullPhoto.src = this.src;      // set big photo source
+  modal.style.display = "flex";  // show modal using flex
+}
 
-  closeBtn.onclick = function() {
+// Close modal on X
+closeBtn.onclick = function() {
+  modal.style.display = "none";
+}
+
+// Close modal on outside click
+window.onclick = function(e) {
+  if (e.target === modal) {
     modal.style.display = "none";
   }
-
-  // Close modal when clicking outside the image
-  window.onclick = function(event) {
-    if (event.target === modal) {
-      modal.style.display = "none";
-    }
-  }
+}
 </script>
+
 
 </body>
 </html>
