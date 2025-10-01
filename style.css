@@ -14,17 +14,20 @@ body {
   left: 0; top: 0;
   width: 100%; height: 100%;
   background: rgba(0,0,0,0.8);
-  overflow: auto;
+
+  /* Flexbox centers the image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-content {
-  display: block;
-  margin: 5% auto;
-  max-width: 90%;
-  max-height: 80vh;
+  max-width: 90%;     /* prevents image from overflowing screen width */
+  max-height: 90vh;   /* prevents image from going beyond viewport height */
   border-radius: 10px;
   box-shadow: 0 0 25px rgba(0,0,0,0.5);
 }
+
 
 .close {
   position: absolute;
