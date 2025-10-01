@@ -33,16 +33,20 @@ body {
   align-items: center;
 }
 
-/* Full-size photo (rectangle, proportional) */
-.modal-content {
+/* Full-size photo only */
+.modal-photo {
   max-width: 90vw;
   max-height: 90vh;
   width: auto;
   height: auto;
-  border-radius: 0;         /* no circle */
-  object-fit: contain;      /* keep aspect ratio */
+  border-radius: 0;
+  object-fit: contain;
   box-shadow: 0 0 25px rgba(0,0,0,0.6);
+  background: none;   /* removes white bg */
+  padding: 0;
+  margin: 0;
 }
+
 
 /* Close button */
 .modal .close {
