@@ -582,6 +582,28 @@ nav a:hover {
     });
   }
 </script>
+<script>
+  const profilePhoto = document.getElementById("profilePhoto");
+  const modal = document.getElementById("photoModal");
+  const fullPhoto = document.getElementById("fullPhoto");
+  const closeBtn = document.querySelector(".close");
+
+  profilePhoto.onclick = function() {
+    modal.style.display = "block";
+    fullPhoto.src = this.src; // same image, but full size
+  }
+
+  closeBtn.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  // Close modal when clicking outside the image
+  window.onclick = function(event) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
 
 </body>
 </html>
