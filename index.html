@@ -69,7 +69,8 @@ nav a:hover {
 </head>
 <body>
 <header class="header">
-  <img src="photome.png" alt="Profile photo of Joseph Borja" class="profile-photo">
+  <img src="photome.png" alt="Profile photo of Joseph Borja" class="profile-photo" id="profilePhoto">
+
   <h1>Joseph Gulleban Borja</h1>
   <p class="subtitle">Systems Administrator | IT Infrastructure Specialist</p>
   <p class="contact">
@@ -82,6 +83,13 @@ nav a:hover {
     <a href="contact.html">Contact Me</a>
   </nav>
 </header>
+
+<!-- Modal for full-size photo -->
+<div id="photoModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="fullPhoto">
+</div>
+
 
 
   <main class="container">
